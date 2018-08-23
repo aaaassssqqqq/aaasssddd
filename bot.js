@@ -142,8 +142,6 @@ client.on("message", message => {
    『$2id / معلومات عن الحساب في صوره』
    『$embed/ يكرر كلامك بمبيد』
    『$sug/ الإقتراحات』
-   『$roles/ يطلع الرتب』
-   『$roles-n يعطيك الرتب بالترتيب』
    『$server/ معلومات عن السيرفر』
    『$image/ يعرض صوره السيرفر』
    『$avatar/ يعرض صورتك او صوره شخص』
@@ -158,37 +156,23 @@ client.on("message", message => {
   
    
            **Administrative Commands**
-   
- 
-   『$ct /انشاء روم كتابي』
-   『$cv /انشاء روم صوتي』
    『$delet / مسح روم』
    『$clear / لمسح الشات』
    『$roles / لرؤيه رتب في سيرفر』
            **Bot Commands**
   
    『$ping/ يعرض لك سرعه اتصال البوت』
-   『$uptime/ يعرض لك صار للبوت كم شغال』
    『$invite/ اضافه البوت』
-   『$mb/ حاله الاعضاء』
-   『$bot/ معلومات عن البوت』
    
               **BC رسائل جماعيه**
-   『$bc2/❖ برودكاست + للكل + غير مطور』
    『$bc3/❖  برودكاست + للأونلاين + مع منشن + غير مطور』
    『$bc4/❖ برودكاست + للكل + مع منشن + غير مطور』
 
 
            **Games Commands**
     
-   『$لعبه صراحه/صراحه』
-   『$لعبه خواطر/خواطر 』
-   『$يعطيك ذكر من الاذكار/ اذكار』
-   『$يخيرك بين شي وشي / لو خيروك』
-   『$يعطيك عقاب و لازم تنفذه/ عقاب』
-   『$لعبه اسئله / كت』
-   『$لعبة سرعة الكتابة/ سرعة』
-   『$للعب لعبه فكك/ فكك』
+   『$صراحه』
+   『$كت تويت』
    『$اسئلني』
  
 
@@ -524,7 +508,7 @@ if (message.content.startsWith(prefix+"cv")) {
 client.on('message', message => {
   if (true) {
 if (message.content === 'invite') {
-      message.author.send('https://discordapp.com/api/oauth2/authorize?client_id=449359611036827663&permissions=8&scope=bot').catch(e => console.log(e.stack));
+      message.author.send('https://discordapp.com/oauth2/authorize?client_id=438317360881991680&permissions=2080374975&scope=bot').catch(e => console.log(e.stack));
 
     }
    } 
