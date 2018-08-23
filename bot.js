@@ -666,4 +666,5 @@ client.on('message', message => {
   message.channel.send(embed);
 }
 });
-client.login("");
+client.login(process.env.BOT_TOKEN);
+
