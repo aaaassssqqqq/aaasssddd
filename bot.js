@@ -1,11 +1,11 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-
 client.on('ready', () => {
-client.user.setGame(`$invite | $help | By 『Dexter』#0445 .`,'https://www.twitch.tv/v5bz');
-  console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setGame(`$invite | $help | By Dexter #0445 .`,'https://www.twitch.tv/v5bz');
+  console.log('---------------');
+  console.log(' Bot Is Online')
+  console.log('---------------')
 });
-
 client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('Pong!');
