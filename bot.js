@@ -102,9 +102,7 @@ client.on('message', message => {
 
   let args = message.content.split(" ").slice(1);
 
-  if (command == "say") {
-   message.channel.sendMessage(args.join("  "))
-  }
+
 });
 client.on("guildMemberRemove", member => {
   let guild = member.guild;
@@ -150,7 +148,6 @@ client.on("message", message => {
    『$topinvite/ لعرض قائمه فيها كل واحد ضاف كم 』
    『$zalgo / يزخرف لك شي تكتب لازم يكون انقليزي مو عربي』
    『$draw / يكرر الكلام في صوره』
-   『$say / يكرر الكلام لتكتب』
    『$translate / يترجم』
    『$botserver / يحطيك سرفرات البوت بترتيب』
   
@@ -504,19 +501,12 @@ if (message.content.startsWith(prefix+"cv")) {
                 message.guild.createChannel(`${argrst}`,'voice')
           
         }
-});
-client.on('message', message => {
-  if (true) {
-if (message.content === 'invite') {
-      message.author.send('https://discordapp.com/oauth2/authorize?client_id=438317360881991680&permissions=2080374975&scope=bot').catch(e => console.log(e.stack));
 
-    }
-   } 
   });
 
 
 client.on('message', message => {
-     if (message.content === "invite") {
+     if (message.content === "$invite") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
