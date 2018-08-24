@@ -28,9 +28,9 @@ client.on("message", message => {
    message.react("😜")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .addField("『Bot 1 | Arab Community』 『اسم البوت』", true)
+      .addField("『Dex-BOT』 『اسم البوت』", true)
       
-      .addField("『مصمم البوت iTzAnan_Over#3412』", true)
+      .addField("『مصمم البوت 『Dexter』#0445』", true)
       
       .addField("『!help^』😘『اذا تبي جميع الاوامر مع اوامر اضافية』😵", true)
       
@@ -417,7 +417,7 @@ client.on("message", message => {
 !invite | القسم الاول لي اضافه البوت 
 
 !support| القسم الثاني  الدعم الفني و المساعدة
-قسم الثالث مصمم البوت iTzAnan_Over#3412
+قسم الثالث مصمم البوت 『Dexter』#0445
 
 
 
@@ -514,7 +514,7 @@ client.on('message', message => {
                             if (message.author.bot) return;
                         let embed = new Discord.RichEmbed()
                         .setAuthor(message.author.username,message.author.avatarURL)
-                        .setThumbnail('https://cdn.discordapp.com/avatars/368141321547808768/c42716e13cb850f9ad0930af699472d0.png?size=2048nk')
+                        .setThumbnail('https://discordapp.com/oauth2/authorize?client_id=438317360881991680&scope=bot&permissions=0Discord')
                         .setColor('RANDOM')
                         .addField('**Time Taken:**',msg + " ms")
                         .addField('**WebSocket:**',api + " ms")
