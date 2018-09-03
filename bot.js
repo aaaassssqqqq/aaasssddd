@@ -11,20 +11,6 @@ client.on('message', msg => {
   if (msg.content === 'هلا') {
     msg.reply('أهلاً وسهلاً');
   }
-client.on('message', msg => {
-  if (msg.content === 'ارحب') {
-    msg.reply('ارحب');
-  }
-});
-client.on('message', msg => {
-  if (msg.content === 'باك') {
-    msg.reply('ولكم شرفتنا');
-  }
-});
-client.on('message', msg => {
-  if (msg.content === 'السلام عليكم') {
-    msg.reply('وعليكم السلام نورت');
-  }
 });
 });
 client.login(process.env.BOT_TOKEN);
