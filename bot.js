@@ -6,3 +6,4 @@ client.on('ready', () => {
   console.log(' Bot Is Online')
   console.log('---------------')
 });
+client.login(process.env.BOT_TOKEN);
