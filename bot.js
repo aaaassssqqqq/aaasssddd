@@ -12,5 +12,4 @@ client.on('message', msg => {
     msg.reply('أهلاً وسهلاً');
   }
 });
-});
 client.login(process.env.BOT_TOKEN);
