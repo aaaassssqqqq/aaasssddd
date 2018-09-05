@@ -11,22 +11,22 @@ client.on('message', message => {
 
 }); 
 client.on('message', msg => {
-  if (msg.content === 'هلا') {
+  if (msg.content === '.هلا') {
     msg.reply('أرحب نورت');
   }
   }); 
 client.on('message', msg => {
-  if (msg.content === 'باك') {
+  if (msg.content === '.باك') {
     msg.reply('ولكم نورت');
   }
   }); 
 client.on('message', msg => {
-  if (msg.content === 'السلام عليكم') {
+  if (msg.content === '.السلام عليكم') {
     msg.reply('وعليكم السلام ورحمة الله وبركاته ..ولكم');
   }
    }); 
 client.on('message', msg => {
-  if (msg.content === 'ديكستر') {
+  if (msg.content === 'ديكستر.') {
     msg.reply('هلا أمر؟');
 }
    });
@@ -61,7 +61,7 @@ client.on('message', msg => {
 ]
 
  client.on('message', message => {
-   if (message.content.startsWith("كت تويت")) {
+   if (message.content.startsWith(".كت تويت")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
