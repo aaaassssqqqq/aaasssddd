@@ -21,6 +21,11 @@ client.on('message', msg => {
   if (msg.content === 'السلام عليكم') {
     msg.reply('وعليكم السلام ورحمة الله وبركاته ..ولكم');
   }
+   }); 
+client.on('message', msg => {
+  if (msg.content === 'ديكستر') {
+    msg.reply('هلا أمر؟');
+}
 });
 client.login(process.env.BOT_TOKEN);
  
