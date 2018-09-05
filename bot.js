@@ -9,12 +9,17 @@ client.on('ready', () => {
 }); 
 client.on('message', msg => {
   if (msg.content === 'هلا') {
-    msg.reply('أهلاً وسهلاً');
+    msg.reply('أرحب نورت');
   }
   }); 
 client.on('message', msg => {
   if (msg.content === 'باك') {
     msg.reply('ولكم نورت');
+  }
+  }); 
+client.on('message', msg => {
+  if (msg.content === 'السلام عليكم') {
+    msg.reply('وعليكم السلام');
   }
 });
 client.login(process.env.BOT_TOKEN);
