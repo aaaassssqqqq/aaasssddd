@@ -5,7 +5,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 client.on('ready', () => {
-client.user.setGame(` مصمم بوتات .`,'https://www.twitch.tv/v5bz');
+
 }); 
 client.on('message', msg => {
   if (msg.content === 'هلا') {
