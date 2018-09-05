@@ -19,7 +19,7 @@ client.on('message', msg => {
   }); 
 client.on('message', msg => {
   if (msg.content === 'السلام عليكم') {
-    msg.reply('وعليكم السلام');
+    msg.reply('وعليكم السلام ورحمة الله وبركاته ..ولكم');
   }
 });
 client.login(process.env.BOT_TOKEN);
