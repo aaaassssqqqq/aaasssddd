@@ -5,6 +5,9 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 client.on('ready', () => {
+  
+client.on('message', message => {
+    var prefix = "!!"
 
 }); 
 client.on('message', msg => {
@@ -58,7 +61,7 @@ client.on('message', msg => {
 ]
 
  client.on('message', message => {
-   if (message.content.startsWith("$كت تويت")) {
+   if (message.content.startsWith("كت تويت")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -70,5 +73,6 @@ client.on('message', msg => {
     }
 });
 });
+  
 client.login(process.env.BOT_TOKEN);
  
