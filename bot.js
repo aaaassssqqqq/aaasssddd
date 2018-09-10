@@ -1,11 +1,18 @@
-const Discord = require("discord.js");
-const client = new Discord.Client();
+const Discord = require('discord.js');
+const A7MD = new Discord.Client();
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-});
-client.user.setGame(setGame[i],`http://www.twitch.tv/barontube`);
- )});
+console.log("BOT ONLINE");
+ 
+A7MD.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+سلام عليكم 
+لو سمحت ممكن تدخل 
+
+                               [ https://discord.gg/JjEc4Tb ] 
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
 client.login(process.env.BOT_TOKEN)
-
